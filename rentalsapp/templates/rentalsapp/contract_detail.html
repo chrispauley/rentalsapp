@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <ul>
+    <li><a href="{% url 'index' %}">Home</a> </li>
+    <li> <a href="{% url 'contracts' %}">Contract List</a></li>
+  </ul
+
+  <h2>Contract Detail Page</h2>
+
+  <div class="container">
+    <h3>{{ contract.erc_firstName }} {{ contract.erc_lastName }}</h3>
+  </div>
+
+
+{% endblock %}

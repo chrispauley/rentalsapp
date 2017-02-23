@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h3>Rental Contract List</h3>
+  <p>Stuff goes here...</p>
+  <ul>
+  {% for contract in contracts %}
+    <li>
+      <a href="{% url 'contract_detail' contract.id %}">
+        {{ contract.erc_firstName|capfirst }}
+      </a>
+    </li>
+  {% endfor %}
+  </ul>
+
+{% endblock %}
